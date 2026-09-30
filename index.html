@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Purificador de Agua | Colegio Las Américas</title>
+<meta name="description" content="Maqueta funcional de filtración de agua con mini bomba. Proyecto de Física Fundamental, Biología y Robótica.">
+<meta name="theme-color" content="#06203f"><meta property="og:type" content="website"><meta property="og:title" content="Purificador de Agua | Colegio Las Américas"><meta property="og:description" content="Maqueta de filtración con mini bomba y simulador interactivo."><meta property="og:image" content="https://jepo-coder.github.io/purificador-agua/assets/maqueta.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E💧%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bar"></div>
+<header class="nav"><a class="brand" href="#inicio">💧 Purificador</a>
+<nav><a href="#inicio">Inicio</a><a href="#nosotros">Filosofía</a><a href="#simulador">Soluciones &amp; Python</a><a href="#contacto">Contacto</a></nav></header>
+
+<main>
+<section id="inicio" class="hero"><div class="hero-text"><p class="eyebrow">PURIFICADOR DE AGUA</p><h1>Agua más limpia con ciencia y tecnología</h1><p class="lead">Una maqueta que filtra las partículas visibles del agua con piedras, algodón y una mini bomba, y une la Física, la Biología y la Robótica.</p><div class="cta"><a class="btn" href="#simulador">Ver simulación</a><a class="btn alt2" href="#problema">Conocer el proyecto</a></div><p class="warn"><b>Importante:</b> el agua de la maqueta no es potable. El filtro solo reduce partículas visibles.</p><p class="small">Colegio Las Américas · Física Fundamental · Docente Ronny Esquivel</p></div>
+<figure class="demo" aria-label="Animación del filtro">
+<svg viewBox="0 0 320 380" id="filtro">
+<rect x="10" y="150" width="70" height="200" rx="8" class="jar"/><rect id="sucia" x="14" y="200" width="62" height="146" rx="5" fill="#a98b5f"/>
+<text x="45" y="368" class="lbl">Agua turbia</text>
+<rect x="120" y="40" width="80" height="250" rx="12" class="jar"/>
+<rect x="124" y="44" width="72" height="80" rx="8" fill="#8d8a84"/><text x="160" y="90" class="lbl w">Piedras</text>
+<rect x="124" y="124" width="72" height="60" fill="#23323b"/><text x="160" y="159" class="lbl w">Carbón*</text>
+<rect x="124" y="184" width="72" height="102" rx="8" fill="#f4f6f7"/><text x="160" y="240" class="lbl n">Algodón</text>
+<rect x="240" y="230" width="70" height="120" rx="8" class="jar"/><rect id="limpia" x="244" y="340" width="62" height="6" rx="4" fill="#7fd1e0"/>
+<text x="275" y="368" class="lbl">Agua filtrada</text>
+<path d="M45 150 V20 H160 V40" class="tube"/><path d="M160 290 V320 H275 V250" class="tube"/>
+<circle id="gota" r="5" fill="#1aa6b7" cx="160" cy="20" opacity="0"/>
+</svg>
+<button id="btnDemo" class="btn ghost2">Encender la bomba</button>
+<figcaption>👆 Toca la escena para bombear · *Carbón activado: opcional</figcaption>
+</figure></section>
+
+<section class="wrap"><div class="grid3"><article class="box feat"><i>💧</i><h3>Filtrado físico</h3><p>Piedras y algodón retienen las partículas visibles.</p></article><article class="box feat"><i>⚙️</i><h3>Bomba y circuito</h3><p>Fuente, interruptor y mini bomba mueven el agua.</p></article><article class="box feat"><i>🔬</i><h3>Tres áreas</h3><p>Física, Biología y Robótica en una sola maqueta.</p></article></div></section>
+
+<section id="problema" class="wrap">
+<h2>El problema</h2>
+<p>El agua puede contaminarse con tierra, basura, partículas, sustancias químicas y microorganismos. A veces el agua que se ve sucia tiene partículas que se pueden separar con procesos físicos. Este proyecto quiere mostrarlo con una maqueta y una bomba eléctrica.</p>
+<div class="grid2">
+<article class="box"><h3>Pregunta de investigación</h3><p>¿Cómo puede construirse un prototipo de purificador de agua con materiales filtrantes y un sistema de bombeo eléctrico, aplicando Física Fundamental, Biología y Robótica?</p></article>
+<article class="box"><h3>Hipótesis</h3><p>Si el agua con partículas visibles atraviesa algodón y piedras y una mini bomba favorece su circulación, entonces disminuirán las partículas visibles y el agua se verá más limpia.</p></article>
+</div>
+<h3>Objetivos</h3>
+<p><b>General:</b> construir un prototipo funcional que demuestre un proceso básico de filtración y circulación del líquido, integrando Física, Biología y Robótica.</p>
+<ul class="chips"><li>Identificar presión, gravedad, flujo y transformación de energía</li><li>Explicar la importancia biológica del agua</li><li>Implementar un circuito con fuente, cables, interruptor y bomba</li><li>Demostrar cómo algodón y piedras retienen partículas</li><li>Promover materiales reutilizables</li></ul>
+</section>
+
+<section id="nosotros" class="wrap alt"><h2>Quiénes somos</h2>
+<div class="grid2"><article class="box"><h3>🎯 Misión</h3><p>Construir una maqueta funcional que muestre cómo se filtra el agua con materiales sencillos y una bomba eléctrica, explicando con claridad sus alcances y sus límites.</p></article>
+<article class="box"><h3>🔭 Visión</h3><p>Ser un proyecto educativo que demuestre cómo la ciencia y la tecnología pueden plantear soluciones sencillas a problemas ambientales.</p></article></div>
+<h3>Valores</h3><ul class="chips"><li>Curiosidad científica</li><li>Responsabilidad</li><li>Sostenibilidad</li><li>Trabajo en equipo</li><li>Honestidad científica</li></ul>
+<h2 style="margin-top:2rem">Impacto sociocultural</h2>
+<div class="grid2"><article class="box"><h3>Menos partículas visibles</h3><p>Muestra cómo retirar partículas del agua con materiales simples.</p></article><article class="box"><h3>Conciencia del agua</h3><p>Ayuda a entender por qué hay que cuidar las fuentes de agua.</p></article><article class="box"><h3>Materiales reutilizables</h3><p>Usa botellas, cartón y piedras de fácil acceso.</p></article><article class="box"><h3>Educación científica</h3><p>Une Física, Biología y Robótica en un proyecto práctico.</p></article></div></section>
+
+<section id="equipo" class="wrap">
+<h2>Equipo</h2>
+<p class="small">Haz clic sobre un nombre o rol para editarlo.</p>
+<ul class="team"><li><em>🧑‍🔬</em><b contenteditable>Andy Salazar</b><span contenteditable>Rol: Coordinador</span></li><li><em>👩‍🔬</em><b contenteditable>María Reneé Pu</b><span contenteditable>Rol: (clic para editar)</span></li><li><em>👨‍💻</em><b contenteditable>Kesler Kerth</b><span contenteditable>Rol: (clic para editar)</span></li><li><em>🧑‍🎨</em><b contenteditable>Addam López</b><span contenteditable>Rol: (clic para editar)</span></li><li><em>👩‍🎓</em><b contenteditable>Adriana Sandoval</b><span contenteditable>Rol: (clic para editar)</span></li><li><em>🧑‍🌾</em><b contenteditable>Paolo Zacarías</b><span contenteditable>Rol: (clic para editar)</span></li></ul>
+</section>
+
+<section id="funciona" class="wrap alt"><h2>Cómo funciona</h2><div class="cols"><ol class="steps"><li>Se activa el <b>interruptor</b>.</li><li>La <b>mini bomba</b> convierte energía eléctrica en movimiento.</li><li>El agua turbia sube por la manguera hasta el filtro.</li><li>Las <b>piedras</b> atrapan partículas grandes y el <b>algodón</b> las pequeñas.</li><li>El agua sale al recipiente final con menos partículas visibles.</li></ol>
+<table><tr><th>Componente</th><th>Función</th></tr><tr><td>Mini bomba</td><td>Mueve el agua por las mangueras.</td></tr><tr><td>Interruptor</td><td>Enciende y apaga el circuito.</td></tr><tr><td>Fuente o batería</td><td>Da la energía eléctrica.</td></tr><tr><td>Piedras</td><td>Retienen partículas grandes.</td></tr><tr><td>Algodón</td><td>Retiene partículas más pequeñas.</td></tr><tr><td>Carbón activado (opcional)</td><td>Ayuda con olores y algunas impurezas.</td></tr><tr><td>Mangueras</td><td>Conducen el agua entre recipientes.</td></tr></table></div></section>
+
+<section id="areas" class="wrap">
+<h2>Tres áreas en una maqueta</h2>
+<div class="tabs" role="tablist"><button class="on" data-t="fis">Física</button><button data-t="bio">Biología</button><button data-t="rob">Robótica</button></div>
+<div class="panel on" id="fis"><p>La mini bomba transforma energía eléctrica en energía mecánica y genera una diferencia de presión que mueve el agua por las mangueras. La gravedad actúa cuando el agua baja de un nivel superior a uno inferior.</p><p>El flujo cambia con el diámetro de la manguera, la altura de los recipientes, las obstrucciones y la potencia de la bomba.</p></div>
+<div class="panel" id="bio"><p>Todos los organismos necesitan agua. Si una fuente se contamina, se afectan personas, animales, plantas y microorganismos.</p><p>Las piedras y el algodón filtran físicamente según el tamaño de la partícula. <b>Agua transparente no significa agua potable</b>: filtrar no es lo mismo que potabilizar.</p></div>
+<div class="panel" id="rob"><p class="flow">Fuente → Interruptor → Mini bomba → Circulación del agua</p><p>No usa programación, pero muestra los principios de la automatización: entrada de energía, circuito, control (interruptor) y actuador (bomba).</p></div>
+</section>
+
+<section id="proceso" class="wrap">
+<h2>Materiales y construcción</h2>
+<div class="cols">
+<div><h3>Materiales <span id="prog" class="small"></span></h3><ul id="mats" class="check"></ul></div>
+<div><h3>Procedimiento</h3><ol id="pasos" class="steps"></ol></div>
+</div>
+</section>
+
+<section id="galeria" class="wrap"><h2>Galería de la maqueta</h2><p>Toca una imagen para verla en grande.</p>
+<div class="gal"><figure><img src="assets/maqueta.jpg" alt="Maqueta del purificador: botella con agua turbia, filtro de piedras, carbón y algodón, y recipiente de agua filtrada" loading="lazy"><figcaption>La maqueta terminada</figcaption></figure>
+<figure><img src="assets/anexo.jpg" alt="Infografía del proyecto con materiales, proceso de filtración, circuito eléctrico y áreas de estudio" loading="lazy"><figcaption>Infografía: materiales, filtrado, circuito y áreas de estudio</figcaption></figure></div></section>
+
+<section id="simulador" class="wrap alt">
+<h2>Simulador del filtro</h2>
+<p>Enciende la bomba y mira cómo las partículas sucias suben por la manguera, cruzan las capas y quedan atrapadas. Es una <b>simulación didáctica</b>: no son datos medidos de la maqueta.</p>
+<div class="lab">
+<canvas id="cv" width="640" height="450" aria-label="Simulación del filtro de agua"></canvas>
+<div class="panel2">
+<button id="pw" class="btn">⏻ Encender bomba</button><button id="rs" class="btn ghost">Reiniciar</button>
+<label>Algodón <b id="vA">4</b><input id="rA" type="range" min="1" max="10" value="4"></label>
+<label>Piedras <b id="vP">5</b><input id="rP" type="range" min="1" max="10" value="5"></label>
+<label>Potencia de la bomba <b id="vB">5</b><input id="rB" type="range" min="1" max="10" value="5"></label>
+<label><input type="checkbox" id="cC"> Agregar carbón activado</label>
+<div class="esc"><button data-e=".5">🌤️ Poco turbia</button><button data-e="1" class="on">🌫️ Turbia</button><button data-e="2">🟤 Muy turbia</button></div><p id="est" class="badge"></p>
+<dl class="stats"><div><dt>Partículas entraron</dt><dd id="sIn">0</dd></div><div><dt>Retenidas</dt><dd id="sRet">0</dd></div><div><dt>Pasaron</dt><dd id="sOut">0</dd></div><div><dt>Retención</dt><dd id="sEf">0%</dd></div><div><dt>Flujo estimado</dt><dd id="sFl">0</dd></div><div><dt>Saturación</dt><dd id="sCl">0%</dd></div></dl>
+<p id="msg" class="small"></p>
+</div></div>
+<h3>Historial de retención (línea punteada = meta 60 %)</h3><canvas id="hist" width="640" height="110"></canvas>
+<p class="rule">SI saturación ≥ 80 % → cambiar el algodón<br>SI saturación &lt; 80 % → el filtro sigue trabajando</p>
+</section>
+
+<section id="python" class="wrap">
+<h2>Modelo en Python</h2>
+<p>Programación orientada a objetos: cada parte del sistema es una clase. Usa las mismas probabilidades del simulador.</p>
+<div class="code"><button id="copy" class="btn sm">Copiar</button><pre id="cod"></pre></div>
+<div class="grid2"><article class="box"><h3>CapaFiltrante</h3><p>Una capa (piedras, carbón o algodón) con su probabilidad de retener cada tamaño.</p></article><article class="box"><h3>Bomba</h3><p>Guarda si está encendida o apagada.</p></article><article class="box"><h3>Purificador</h3><p>Es el controlador: si la bomba está encendida, prueba cada capa.</p></article><article class="box"><h3>filtrar()</h3><p>Devuelve dónde quedó la partícula: retenida en una capa o en el agua filtrada.</p></article></div>
+</section>
+
+<section id="resultados" class="wrap alt">
+<h2>Resultados y conclusiones</h2>
+<div class="grid3">
+<article class="box"><h3>Observaciones</h3><ul><li>La bomba mueve el agua de forma continua.</li><li>Demasiado algodón compactado reduce el flujo.</li><li>Las conexiones deben sellarse bien.</li><li>Los componentes eléctricos deben estar lejos del agua.</li></ul></article>
+<article class="box"><h3>Resultados</h3><ul><li>Parte de las partículas quedó en piedras y algodón.</li><li>El agua recolectada se vio más limpia.</li><li>El interruptor encendió y apagó la bomba.</li></ul></article>
+<article class="box"><h3>Limitación</h3><p>No se analizaron microorganismos ni sustancias químicas. Para agua apta para consumo hacen falta tratamiento, desinfección y control de calidad (CDC, 2025).</p></article>
+</div>
+<p class="big">La hipótesis se aceptó a nivel experimental: hubo menos partículas visibles y mejor apariencia del agua.</p>
+</section>
+
+<section id="contacto" class="wrap alt"><h2>Contacto</h2><form id="frm" class="frm"><label>Nombre<input required></label><label>Correo<input type="email" required></label><label>Mensaje<textarea rows="4" required></textarea></label><button class="btn">Enviar mensaje</button><p id="ok" class="small"></p></form></section>
+
+<section id="faq" class="wrap"><h2>Preguntas frecuentes</h2>
+<details><summary>¿Puedo beber el agua filtrada?</summary><p>No. La maqueta solo reduce partículas visibles y no elimina microorganismos ni químicos.</p></details>
+<details><summary>¿Por qué se usa una bomba?</summary><p>Para mostrar cómo la energía eléctrica se convierte en movimiento del agua y cómo un interruptor controla un actuador.</p></details>
+<details><summary>¿Qué diferencia hay entre filtrar y potabilizar?</summary><p>Filtrar separa partículas físicamente. Potabilizar aplica tratamientos suficientes para que el agua sea segura según criterios sanitarios.</p></details>
+<details><summary>¿Qué materiales usaron?</summary><p>Botellas, piedras, algodón, mangueras, cartón, mini bomba, interruptor y una fuente compatible. Carbón activado es opcional.</p></details>
+<details><summary>¿Los datos del simulador son reales?</summary><p>No. Es una simulación didáctica; las probabilidades son un modelo para explicar la idea, no mediciones de la maqueta.</p></details>
+<h3>Bibliografía</h3>
+<ul class="bib"><li>CDC. (2025, 26 de agosto). <i>Acerca de los sistemas de tratamiento del agua para la casa.</i></li><li>CDC. (2025, 26 de agosto). <i>Acerca de cómo elegir filtros de agua para la casa.</i></li><li>OMS. (2023, 13 de septiembre). <i>Agua para consumo humano.</i></li></ul>
+</section>
+</main>
+<footer><h3>Gracias por visitar nuestro proyecto de Feria Científica.</h3><p>Purificador de Agua · Colegio Las Américas · Proyecto educativo · Simulación web</p></footer>
+<button id="top" aria-label="Volver arriba">↑</button><div id="lb"><img alt=""></div>
+<script src="js/script.js" defer></script>
+</body>
+</html>
